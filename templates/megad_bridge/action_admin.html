@@ -1,0 +1,16 @@
+<form action="?" method="post" class="form-horizontal">
+ <div class="form-group"><label><#LANG_MEGAD_BRIDGE_ENDPOINT#></label><input type="text" name="endpoint" value="[#ENDPOINT#]" class="form-control"></div>
+ <div class="form-group"><label><#LANG_MEGAD_BRIDGE_METHOD#></label><select name="method" class="form-control"><option value="GET"[#if METHOD="GET"#] selected[#endif#]>GET</option><option value="POST"[#if METHOD="POST"#] selected[#endif#]>POST</option></select></div>
+ <div class="form-group"><label><#LANG_MEGAD_BRIDGE_TOKEN#></label><input type="password" name="token" value="" class="form-control" autocomplete="new-password"></div>
+ <div class="form-group"><label><#LANG_MEGAD_BRIDGE_REGION#></label><input type="text" name="region" value="[#REGION#]" class="form-control"></div>
+ <div class="form-group"><label><#LANG_MEGAD_BRIDGE_TRACKING#></label><input type="text" name="tracking" value="[#TRACKING#]" class="form-control"></div>
+ <div class="form-group"><label><#LANG_MEGAD_BRIDGE_PAYLOAD#></label><textarea name="payload" rows="4" class="form-control">[#PAYLOAD#]</textarea></div>
+ <div class="form-group"><label><#LANG_MEGAD_BRIDGE_SEC#></label><input type="text" name="sec" value="[#SEC#]" class="form-control"></div>
+ <div class="form-group"><label><#LANG_MEGAD_BRIDGE_PORT#></label><input type="text" name="port" value="[#PORT#]" class="form-control"></div>
+ <div class="form-group"><label><#LANG_MEGAD_BRIDGE_VALUE#></label><input type="text" name="value" value="[#VALUE#]" class="form-control"></div>
+ <div class="form-group"><label><#LANG_MEGAD_BRIDGE_QUEUE_MODE#></label><input type="text" name="queue_mode" value="[#QUEUE_MODE#]" class="form-control"></div>
+ <button type="submit" class="btn btn-primary"><#LANG_UPDATE#></button>
+ <input type="hidden" name="mode" value="update">
+</form>
+<p class="help-block"><#LANG_MEGAD_BRIDGE_HINT#></p>
+<p class="help-block"><#LANG_MEGAD_BRIDGE_LAST#>: [#LAST_RESULT#]</p>
